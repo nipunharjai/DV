@@ -5,6 +5,7 @@
   "homepage": "https://nipunharjai.github.io/DV/",
   "type": "module",
   "scripts": {
+    "predev": "lsof -nti:5173 | xargs kill -9",
     "dev": "vite",
     "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
