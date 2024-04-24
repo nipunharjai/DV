@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://nipunharjai.github.io/dv/",
+  "homepage": "https://nipunharjai.github.io/DV/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
