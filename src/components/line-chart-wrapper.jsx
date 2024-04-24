@@ -90,7 +90,8 @@ const LineChartWrapper = (props) => {
     const getXValueClosestToMouse = (mouseX) => {
         const { xScale } = scales.current;
         if (!xScale) return undefined;
-        return xScale.invert(mouseX - margin.left - margin.right);
+        const subtract = d3.select('g')?.node()?.getBoundingClientRect()?.x || 0;
+        return xScale.invert(mouseX - 40 - subtract);
     }
 
     React.useEffect(() => {
